@@ -29,7 +29,7 @@ section
 }
 .marque
 {
-    width: 965px;
+    width: 945px;
     font-family: cursive;
 }
 nav
@@ -40,15 +40,12 @@ nav
     height:60px;
     background-color:#FFFFFF;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
-    padding:0px 5%;
     position: fixed;
     z-index: 2;
+    width: 100%;
     
 }
-nav p
-{
-    padding-left: 400px;
-}
+
 
 nav ul
 {
@@ -184,7 +181,7 @@ button:hover
     position: absolute;
     bottom: 80px;
     left: 70%;
-    transform: translateX(-70%);
+    transform: translateX(-40%);
 }
 .about-container
 {
@@ -575,7 +572,10 @@ footer p:nth-child(2)
     {
         display: none;
     }
-    
+    .profile a
+    {
+        font-size: 2px;
+    }
     .toggle
     {
         display: block;
