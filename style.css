@@ -575,7 +575,7 @@ footer p:nth-child(2)
     }
     .profile a
     {
-        font-size: 2px;
+        font-size: 10px;
     }
     .toggle
     {
@@ -663,6 +663,10 @@ footer p:nth-child(2)
     .skills-text
     {
         width: 100%;
+    }
+    .skills-text p:nth-child(1)
+    {
+        font-size: 14px;
     }
     
     .contact-me
