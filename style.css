@@ -586,6 +586,7 @@ footer p:nth-child(2)
         line-height: 40px;
         margin: 0px;
         padding: 0px;
+        font-size: 40px;
     }
     .text-container
     {
@@ -633,6 +634,10 @@ footer p:nth-child(2)
         line-height: 30px;
         z-index: 1;
         
+    }
+    .about-container img
+    {
+        background-image: url("syam.jpeg");
     }
     .toggle.active:before
     {
