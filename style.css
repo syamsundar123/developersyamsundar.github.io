@@ -179,9 +179,10 @@ button:hover
 {
     height: 560px;
     position: absolute;
-    bottom: 80px;
+    bottom: 50px;
     left: 70%;
     transform: translateX(-40%);
+   
 }
 .about-container
 {
