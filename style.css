@@ -637,7 +637,8 @@ footer p:nth-child(2)
     }
     .about-container img
     {
-        background-image: url("syam.jpeg");
+        width: 200px;
+        height: 500px;
     }
     .toggle.active:before
     {
