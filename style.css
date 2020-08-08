@@ -152,6 +152,7 @@ nav ul li
     border-radius: 10px;
     margin-right: 20px;
     text-align: center;
+    outline: none;
     
 }
 .profile a:hover{
@@ -450,6 +451,10 @@ footer p:nth-child(2)
 {
     color: #000000;
 }
+.social-icons a
+{
+    outline: none;
+}
 .social-icons a:hover,
 .a-social-b a:hover
 {
@@ -483,6 +488,7 @@ footer p:nth-child(2)
     background-color: #FFFFFF;
     border: 1px solid #cbcbcb;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    outline: none;
     
 }
 .a-social-b i
