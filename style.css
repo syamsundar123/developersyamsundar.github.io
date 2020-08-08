@@ -161,6 +161,7 @@ nav ul li
 {
     border: 2px solid #373636;
     color: #373636;
+    outline: none;
     
 }
 .down-cv
@@ -168,6 +169,7 @@ nav ul li
     background-color: #0b0b0b;
     color: #FFFFFF;
     border: none;
+    outline: none;
     
 }
 button:hover
