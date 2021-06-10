@@ -1,152 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset = "utf-8">
-    <meta http-equiv = "X-UA-Compatible" content = "IE-edge">
-
-    <meta name = "viewport" content="width = device-width", initial-scale = 1.0>
-
-    <title>Banks Info</title>
-    <link href="../static/styles.css" rel="stylesheet" type="text/css">
-
-
-
-</head>
+<meta charset = "utf-8">
+    
+<meta http-equiv = "X-UA-Compatible" content = "IE-edge">
+    
+<meta name = "viewport" content="width = device-width",initial-scale = 1.0>
+    
+    <title>Syam Portfolio</title>
+    
+    <link rel = "stylesheet" type = "text/css" href = "style.css"/>
+    
+    <script src = "https://kit.fontawesome.com/c8e4d183c2.js"
+            crossorigin = "anonymous"></script>
+    
+    </head>
+    <link href= "icon.jpg" rel="icon"type="image/ico">
 <body>
-    <div class = 'header'>
-        <h>Banks Info</h>
-
-    </div>
-
-    <div class="container">
-
-        <div class="dropdown">
-            <SELECT name="branch" >
-                <OPTION value=header >Select City</OPTION>
-                {% for c in cityList %}
-
-	           <OPTION value={{c}} > {{c}} </OPTION>
-
-                {% endfor %} </SELECT>
-
+    <section>
+        
+    <!--navigation---------->
+        <nav>
+        <!--logo-->
+        <div class="marque"><marquee>If you want it,work for it.</marquee></div>
+        <!--menu-->
+        <ul>
+        <li><a href = "#" class="home">Home</a></li>
+        <li><a href = "#about-me"class = "active">About</a></li>
+        <li><a href = "#social--icons">Contact me</a></li>
+        
+        </ul>
+        <!--bars--------->
+            <div class="toggle"></div>
+    </nav>
+    <!--Text------------------>
+        <div class = "text-container">
+        <p>Hello,</p>
+        <p>I'M SYAM SUNDAR</p>
+        <p>Student</p>
+        <button id = "hireme" onclick="window.open('mailto:syamsundar4690@gmail.com','_blank')" class = "hire-btn">Hire me</button>
+        <a href = "Syam Sundar_CV.pdf" download = "Syam_CV">
+        <button type = "button" class = "down-cv" id = "download-cv">Download CV</button></a>
+        
+           <p class = profile> <a href = "https://www.hackerrank.com/syamsundarrkss71" target = "_blank">Hackerrank Profile</a>
+            <a href="https://auth.geeksforgeeks.org/user/syamsundar2/profile"target = "_blank">Geeks for Geeks Profile</a>
+           </p> 
         </div>
-        <form autocomplete="off" action="/action_page.php">
-            <div class="autocomplete" style="width:300px;">
-                <input id="myInput" type="text" name="myCountry" placeholder="Country" >
+         
+      <!--model------------->
+        <img src = "syam.jpeg" class = "model" alt = "model">
+         
+    </section>
+    <!--About Section------->
+    <div class ="about-container" id="about-me">
+    <!--img----------->
+    <img src = "syam.jpeg" >
+    <!--about-text---->
+    <div class = "about-text" >
+        <p>About Me</p>
+        <p></p>
+        <p>I'm Syam Sundar Konakalla pursuing B.tech at Lovely Professional University.I have an ample knowledge of Data Strucures and Algorithms.Strong in design and integration with intuitive problem-solving skills. Proficient in Data Structures and Algorithms, 
+PYTHON,  and SQL.I'm looking for an internship/entry level web/software developer job.My hobbies are playing chess.My interests are coding.</p>
+        <p>I beleive in Practice makes man perfect.My motto is IF YOU WANT IT,WORK FOR IT.</p>
+        <button id = "hire-me" onclick="window.open('mailto:syamsundar4690@gmail.com','_blank')">Hire Me</button>
+         <a href = "syam_resume.pdf" download = "Syam_Resume">
+             <button type = "button">Download Resume</button></a>
+        </div>
+        </div>
+    <!--Skills------------>
+    <div class = "skills">
+    <div class = "skills-text">
+        <p>Skills And Certifications</p>
+        <p>Skills</p></div>
+        <!--box--------------->
+        <div class = "box-container">
+        <div class = "box-1">
+            <span>1</span>
+            <p class = "heading">Web Developer</p>
+            <p class = "details">I'm interseted in web development and have done some projects in web development.</p>
+            <button id  = "WD" onclick = "window.open('https://github.com/syamsundar123/11805900_k18vq','_blank')">Know More...</button></div>
+        <div class = "box-2">
+            <span>2</span>
+            <p class = "heading">Software Developer</p>
+            <p class = "details">I'm also interseted in Software development and have done some projects in Software development.</p>
+            <button id = "SD" onclick="window.open('https://github.com/syamsundar123/Python3','_blank')">Know More...</button></div>
+        <div class = "box-3">
+            <span>3</span>
+            <p class = "heading">DSA</p>
+            <p class = "details">I have completed Data Structures And Algorithms and an ample Knowledge and usage of Data Structures and Algorithms.</p>
+            <button>Read More...</button></div>
+        </div> 
+        <div class = "certifications">
+        <p>Certifications</p>
+        <div class = "box-container">
+        <div class = "box-1">
+            <span>1</span>
+            <p class = "heading">DSA</p>
+            <img src = "DSA.png">
             </div>
-
-    </form>
-        <div class = "filter">
-        <input type="text" placeholder="No of rows">
-        </div>
-        <div class = "offset">
-            <input type="text" placeholder="Offset">
-        </div>
-
-
+           
+        <div class = "box-2">
+            <span>2</span>
+            <p class = "heading">Python</p>
+            <img src="python.jpg">
+            </div>
+        <div class = "box-3">
+            <span>3</span>
+            <p class = "heading">ML</p>
+            <img src = ML.png>
+            </div></div>
+       
+            
     </div>
-    <script type = "text/javascript" >
+    
+     <!--Contact Me------>
+    <div class = "contact-me">
+        <p>If you have any projects In Your Mind</p>
+        <button id = "contact-me" onclick="window.open('https://api.whatsapp.com/send?phone=+919494236797','_blank')">Contact Me</button></div>
+    <!--Footer--------------->
+    <footer>
+    <p>Going-To-Social Media</p>
+    <p>I makes as soon as possible.You really like my work.If you don't,i will change this until you like I give you satisfaction result.</p>
+    
+        
+        <!--Social-------->
+    <div class = "social-icons" id = "social--icons">
+        <a href = "https://api.whatsapp.com/send?phone=+919494236797" target = "_blank"><i class = "fab fa-whatsapp"></i></a>
+        <a href = "mailto:syamsundar4690@gmail.com"  target = "_blank"><i class = "fas fa-envelope"></i></a>
+        <a href = "https://www.linkedin.com/in/syam-sundar-7683a5172/" target = "_blank"><i class = "fab fa-linkedin"></i></a>
+        <a href = "https://www.quora.com/profile/Syam-Sundar-137"  target = "_blank"><i class = "fab fa-quora"></i></a>
+        </div>
+    <!--copyright-------->
+        <p class = "copyright">Copyright by KSS.</p>
+        </footer>
+    <!--Attached Social bar-->
+    <div class = "a-social-b">
+        <a href = "https://www.facebook.com/profile.php?id=100026608965747
+" target = "_blank"><i class = "fab fa-facebook-f"></i></a>
+        <a href = "https://github.com/syamsundar123" target = "_blank" ><i class = "fab fa-github" ></i></a>
+        <a href = "https://www.linkedin.com/in/syam-sundar-7683a5172/" target = "_blank"><i class = "fab fa-linkedin"></i></a>
+        <a href = "https://www.quora.com/profile/Syam-Sundar-137"  target = "_blank"bn><i class = "fab fa-quora"></i></a>
+        </div>
+    <script type = "text/javascript" src="JQuery.js"></script>
+    <script type="text/javascript">
+        
+    
+           
+        
+        
 
-        function autocomplete(inp,arr) {
-  /*the autocomplete function takes two arguments,
-  the text field element and an array of possible autocompleted values:*/
-  var inp = document.getElementById("myInput")
-  var currentFocus;
-  console.log(arr);
-  /*execute a function when someone writes in the text field:*/
-  inp.addEventListener("input", function(e) {
-      var a, b, i, val = this.value;
-      /*close any already open lists of autocompleted values*/
-      closeAllLists();
-      if (!val) { return false;}
-      currentFocus = -1;
-      /*create a DIV element that will contain the items (values):*/
-      a = document.createElement("DIV");
-      a.setAttribute("id", this.id + "autocomplete-list");
-      a.setAttribute("class", "autocomplete-items");
-      /*append the DIV element as a child of the autocomplete container:*/
-      this.parentNode.appendChild(a);
-      /*for each item in the array...*/
-      for (i = 0; i < arr.length; i++) {
-        /*check if the item starts with the same letters as the text field value:*/
-        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-          /*create a DIV element for each matching element:*/
-          b = document.createElement("DIV");
-          /*make the matching letters bold:*/
-          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-          b.innerHTML += arr[i].substr(val.length);
-          /*insert a input field that will hold the current array item's value:*/
-          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-          /*execute a function when someone clicks on the item value (DIV element):*/
-              b.addEventListener("click", function(e) {
-              /*insert the value for the autocomplete text field:*/
-              inp.value = this.getElementsByTagName("input")[0].value;
-              /*close the list of autocompleted values,
-              (or any other open lists of autocompleted values:*/
-              closeAllLists();
-          });
-          a.appendChild(b);
-        }
-      }
-  });
-  /*execute a function presses a key on the keyboard:*/
-  inp.addEventListener("keydown", function(e) {
-      var x = document.getElementById(this.id + "autocomplete-list");
-      if (x) x = x.getElementsByTagName("div");
-      if (e.keyCode == 40) {
-        /*If the arrow DOWN key is pressed,
-        increase the currentFocus variable:*/
-        currentFocus++;
-        /*and and make the current item more visible:*/
-        addActive(x);
-      } else if (e.keyCode == 38) { //up
-        /*If the arrow UP key is pressed,
-        decrease the currentFocus variable:*/
-        currentFocus--;
-        /*and and make the current item more visible:*/
-        addActive(x);
-      } else if (e.keyCode == 13) {
-        /*If the ENTER key is pressed, prevent the form from being submitted,*/
-        e.preventDefault();
-        if (currentFocus > -1) {
-          /*and simulate a click on the "active" item:*/
-          if (x) x[currentFocus].click();
-        }
-      }
-  });
-  function addActive(x) {
-    /*a function to classify an item as "active":*/
-    if (!x) return false;
-    /*start by removing the "active" class on all items:*/
-    removeActive(x);
-    if (currentFocus >= x.length) currentFocus = 0;
-    if (currentFocus < 0) currentFocus = (x.length - 1);
-    /*add class "autocomplete-active":*/
-    x[currentFocus].classList.add("autocomplete-active");
-  }
-  function removeActive(x) {
-    /*a function to remove the "active" class from all autocomplete items:*/
-    for (var i = 0; i < x.length; i++) {
-      x[i].classList.remove("autocomplete-active");
-    }
-  }
-  function closeAllLists(elmnt) {
-    /*close all autocomplete lists in the document,
-    except the one passed as an argument:*/
-    var x = document.getElementsByClassName("autocomplete-items");
-    for (var i = 0; i < x.length; i++) {
-      if (elmnt != x[i] && elmnt != inp) {
-      x[i].parentNode.removeChild(x[i]);
-    }
-  }
-}
-/*execute a function when someone clicks in the document:*/
-document.addEventListener("click", function (e) {
-    closeAllLists(e.target);
-});
-}
-         autocomplete(document.getElementById("myInput"), {{bankList}});
+    $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('.toggle').toggleClass('active')
+             $('nav').toggleClass('active')
+            
+        })
+    })
+    
+    
+    
+    
     </script>
-
+    
 </body>
 </html>
